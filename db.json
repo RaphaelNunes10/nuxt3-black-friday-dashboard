@@ -1,0 +1,100 @@
+[
+    {
+        "summary": {
+            "today": {
+            "revenues": 5678.90,
+            "tickets": 1234
+            },
+            "yesterday": {
+            "revenues": 6789.01,
+            "tickets": 2345
+            }
+        },
+        "revenues_ranking": [
+            {
+            "id": 1,
+            "store_name": "Store A",
+            "total": 7890.12
+            },
+            {
+            "id": 2,
+            "store_name": "Store B",
+            "total": 6789.01
+            },
+            {
+            "id": 3,
+            "store_name": "Store C",
+            "total": 5678.90
+            },
+            {
+            "id": 4,
+            "store_name": "Store D",
+            "total": 4567.89
+            },
+            {
+            "id": 5,
+            "store_name": "Store E",
+            "total": 3456.78
+            }
+        ],
+        "tickets_ranking": [
+            {
+            "id": 1,
+            "store_name": "Store A",
+            "total": 234
+            },
+            {
+            "id": 2,
+            "store_name": "Store B",
+            "total": 210
+            },
+            {
+            "id": 3,
+            "store_name": "Store C",
+            "total": 190
+            },
+            {
+            "id": 4,
+            "store_name": "Store D",
+            "total": 170
+            },
+            {
+            "id": 5,
+            "store_name": "Store E",
+            "total": 150
+            }
+        ],
+        "transactions": [
+            {
+            "id": 1,
+            "store_name": "Store A",
+            "total": 123.45,
+            "date": "2024-08-09"
+            },
+            {
+            "id": 2,
+            "store_name": "Store B",
+            "total": 234.56,
+            "date": "2024-08-08"
+            },
+            {
+            "id": 3,
+            "store_name": "Store C",
+            "total": 345.67,
+            "date": "2024-08-07"
+            },
+            {
+            "id": 4,
+            "store_name": "Store D",
+            "total": 456.78,
+            "date": "2024-08-06"
+            },
+            {
+            "id": 5,
+            "store_name": "Store E",
+            "total": 567.89,
+            "date": "2024-08-05"
+            }
+        ]
+    }
+]
