@@ -9,10 +9,6 @@ export const useMyApiDataStore = defineStore({
   actions: {
     async getData() {
 
-      const spinnerStore = useMySpinnerStore();
-
-      spinnerStore.setSpinner(true);
-
       try {
         const apiData = await $fetch("http://localhost:4000/0")
         .catch((err: FetchError) => {
@@ -28,9 +24,6 @@ export const useMyApiDataStore = defineStore({
 					console.error("Unknown error.");
 				}
 			}
-      finally {
-        spinnerStore.setSpinner(false);
-      }
     }
   }
 })
