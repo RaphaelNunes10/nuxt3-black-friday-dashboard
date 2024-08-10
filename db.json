@@ -69,31 +69,31 @@
             "id": 1,
             "store_name": "Store A",
             "total": 123.45,
-            "date": "2024-08-09"
+            "date": "2024-08-09T05:00"
             },
             {
             "id": 2,
             "store_name": "Store B",
             "total": 234.56,
-            "date": "2024-08-08"
+            "date": "2024-08-08T11:30"
             },
             {
             "id": 3,
             "store_name": "Store C",
             "total": 345.67,
-            "date": "2024-08-07"
+            "date": "2024-08-07T12:00"
             },
             {
             "id": 4,
             "store_name": "Store D",
             "total": 456.78,
-            "date": "2024-08-06"
+            "date": "2024-08-06T09:45"
             },
             {
             "id": 5,
             "store_name": "Store E",
             "total": 567.89,
-            "date": "2024-08-05"
+            "date": "2024-08-05T16:00"
             }
         ]
     }
