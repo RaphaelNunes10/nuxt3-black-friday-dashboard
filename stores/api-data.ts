@@ -1,8 +1,6 @@
 import { defineStore } from "pinia"
 import { FetchError } from "ofetch";
 
-import type { Data } from "../data.type";
-
 export const useMyApiDataStore = defineStore({
   id: 'myApiDataStore',
   state: () => ({ 

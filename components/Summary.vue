@@ -145,7 +145,6 @@
 
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
-import type { Summary } from "~/data.type";
 
 const props = defineProps<{
   data: Summary

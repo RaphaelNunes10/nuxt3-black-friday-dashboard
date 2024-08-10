@@ -78,8 +78,6 @@ import "simplebar-vue/dist/simplebar.min.css";
 
 import { useDisplay } from "vuetify";
 
-import type { Data, RankingItem } from "../data.type";
-
 defineProps<{
   title?: string, 
   color?: string, 

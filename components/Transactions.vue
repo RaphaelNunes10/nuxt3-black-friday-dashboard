@@ -82,7 +82,6 @@ import Simplebar from "simplebar-vue";
 import "simplebar-vue/dist/simplebar.min.css";
 
 import { useDisplay } from "vuetify";
-import type { Transaction } from "~/data.type";
 
 defineProps<{
   data?: Transaction[]
