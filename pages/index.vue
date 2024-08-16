@@ -6,14 +6,14 @@
           <v-col cols="12" :style="summaryHeight">
             <Summary :data="data.summary" />
           </v-col>
-          <v-col cols="12" sm="6" style="height: 60%">
+          <v-col cols="12" sm="6" :style="rankingHeight">
             <ranking
               title="Revenues"
               color="#EFEFEF"
               :data="data.revenues_ranking"
             />
           </v-col>
-          <v-col cols="12" sm="6" style="height: 60%">
+          <v-col cols="12" sm="6" :style="rankingHeight">
             <Ranking
               dark
               title="Tickets"
@@ -47,6 +47,15 @@ const summaryHeight = computed(() => {
   }
 });
 
+const rankingHeight = computed(() => {
+  switch (name.value) {
+    case "lg":
+      return "height: 60%";
+    default:
+      return "height: 55%";
+  }
+});
+
 const padding = computed(() => {
   switch (name.value) {
     case "xs":
@@ -59,15 +68,4 @@ const padding = computed(() => {
       return "px-5 py-5";
   }
 });
-
-// const heightClass = computed(() => {
-//   switch (name.value) {
-//     case "xs":
-//       return "full-height";
-//     case "sm":
-//       return "full-height";
-//     default:
-//       return "fill-height";
-//   }
-// });
 </script>
