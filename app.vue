@@ -9,7 +9,5 @@
 <script setup lang="ts">
 const apiDataStore = useMyApiDataStore();
 
-onBeforeMount(() => {
-  apiDataStore.getData();
-});
+await useAsyncData('data', () => apiDataStore.getData().then(() => true));
 </script>

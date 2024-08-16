@@ -1,5 +1,5 @@
 <template>
-  <v-card tile flat dark class="fill-height" v-if="data">
+  <v-card tile flat dark class="fill-height">
     <v-row no-gutters style="height: 50%">
       <v-col cols="12" sm="2" class="day-col py-5">
         <v-row no-gutters align="center" class="fill-height">

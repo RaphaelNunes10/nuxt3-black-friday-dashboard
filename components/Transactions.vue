@@ -5,7 +5,6 @@
     color="#EFEFEF"
     flat
     :class="`fill-height ${padding}`"
-    v-if="data"
   >
     <v-container class="px-5 py-5" style="height: 100%">
       <div class="header">Transactions</div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="fill-height" v-if="data">
+  <div class="fill-height">
     <v-row no-gutters justify="center" class="fill-height">
       <v-col cols="12" md="8" lg="6" class="fill-height">
         <v-row no-gutters align="start" class="fill-height">
