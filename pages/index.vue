@@ -35,9 +35,6 @@ import { useDisplay } from "vuetify";
 
 const apiDataStore = useMyApiDataStore();
 const { data } = storeToRefs(apiDataStore);
-const { getData } = apiDataStore;
-
-await useAsyncData('data', () => getData().then(() => true));
 
 const { name } = useDisplay();
 
