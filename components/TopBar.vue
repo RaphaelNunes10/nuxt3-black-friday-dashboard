@@ -2,10 +2,9 @@
   <div style="height: 120px;">
     <v-app-bar app clipped-right flat light height="120" scroll-behavior="hide" scroll-threshold="60">
       <v-container fluid>
-        <v-row justify="center" align="center">
+        <v-row no-gutters justify="center" align="center">
           <v-col cols="2" md="1" align="center">
-            <v-img
-              contain
+            <nuxt-img 
               :width="logoSize"
               :height="logoSize"
               class="logo"
@@ -50,18 +49,18 @@ const { name: displaySize } = useDisplay();
 const logoSize = computed(() => {
   switch (displaySize.value) {
     case "xs":
-      return 32;
+      return 22;
     case "sm":
       return 32;
     default:
-      return 40;
+      return 42;
   }
 });
 </script>
 
 <style scoped>
 .logo {
-  margin-bottom: 12px;
+  object-fit: contain;
 }
 
 .title {
@@ -74,20 +73,12 @@ const logoSize = computed(() => {
 }
 
 @media only screen and (max-width: 960px) {
-  .logo {
-    margin-bottom: 10px;
-  }
-
   .title {
     font-size: 42px !important;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .logo {
-    margin-bottom: 0px;
-  }
-
   .title {
     font-size: 20px !important;
   }
