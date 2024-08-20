@@ -1,5 +1,7 @@
 # Nuxt 3 Black Friday Dashboard
 
+## Live-app: https://nuxt3-black-friday-dashboard.netlify.app
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
