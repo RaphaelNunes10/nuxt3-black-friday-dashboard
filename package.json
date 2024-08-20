@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "concurrently \"nuxt dev -o\" \"json-server db.json -p 4000\"",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -19,7 +19,6 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
     "sass": "^1.77.8",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.6.14"

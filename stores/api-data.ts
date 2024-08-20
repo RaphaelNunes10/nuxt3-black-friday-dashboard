@@ -10,12 +10,12 @@ export const useMyApiDataStore = defineStore({
     async getData() {
 
       try {
-        const apiData = await $fetch("http://localhost:4000/0")
+        const apiData = await $fetch("https://run.mocky.io/v3/f967f0fc-6449-45dd-9296-a98d3e759a86")
         .catch((err: FetchError) => {
           throw `${err.status}: [${err.statusText}] ${err.response?._data?.message || "Unknown error."}`;
-        });
+        }) as Data[];
 
-        Object.assign(this.data, apiData);
+        Object.assign(this.data, apiData[0]);
       }
       catch(e) {
 				if (typeof e === "string") {
