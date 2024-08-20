@@ -55,17 +55,4 @@ const rankingHeight = computed(() => {
       return "height: 55%";
   }
 });
-
-const padding = computed(() => {
-  switch (name.value) {
-    case "xs":
-      return "px-1 py-0";
-    case "md":
-      return "px-1 py-5";
-    case "lg":
-      return "px-2 py-5";
-    default:
-      return "px-5 py-5";
-  }
-});
 </script>
