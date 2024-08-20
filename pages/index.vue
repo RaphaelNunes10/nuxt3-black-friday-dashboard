@@ -36,10 +36,10 @@ import { useDisplay } from "vuetify";
 const apiDataStore = useMyApiDataStore();
 const { data } = storeToRefs(apiDataStore);
 
-const { name } = useDisplay();
+const { name: displaySize } = useDisplay();
 
 const summaryHeight = computed(() => {
-  switch (name.value) {
+  switch (displaySize.value) {
     case "lg":
       return "height: 40%";
     default:
@@ -48,7 +48,7 @@ const summaryHeight = computed(() => {
 });
 
 const rankingHeight = computed(() => {
-  switch (name.value) {
+  switch (displaySize.value) {
     case "lg":
       return "height: 60%";
     default:

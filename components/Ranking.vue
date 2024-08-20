@@ -84,10 +84,10 @@ defineProps<{
   data?: RankingItem[]
 }>();
 
-const { name } = useDisplay();
+const { name: displaySize }  = useDisplay();
 
 const padding = computed(() => {
-  switch (name.value) {
+  switch (displaySize.value) {
     case "xs":
       return "px-1 py-0";
     case "md":

@@ -45,10 +45,10 @@ const { data } = storeToRefs(apiDataStore);
 
 const drawer = ref(false);
 
-const { name } = useDisplay();
+const { name: displaySize } = useDisplay();
 
 const logoSize = computed(() => {
-  switch (name.value) {
+  switch (displaySize.value) {
     case "xs":
       return 32;
     case "sm":

@@ -160,10 +160,10 @@ const ticketsIcon = reactive({
   color: "",
 });
 
-const { name } = useDisplay();
+const { name: displaySize } = useDisplay();
 
 const padding = computed(() => {
-  switch (name.value) {
+  switch (displaySize.value) {
     case "xs":
       return "px-1 py-0";
     default:
@@ -172,7 +172,7 @@ const padding = computed(() => {
 })
 
 const dayAlignment = computed(() => {
-  switch (name.value) {
+  switch (displaySize.value) {
     case "xs":
       return "left";
     default:
